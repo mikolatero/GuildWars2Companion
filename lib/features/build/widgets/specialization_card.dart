@@ -53,7 +53,7 @@ class _SpecializationRow extends StatelessWidget {
             padding: EdgeInsets.all(4.0),
             child: Text(
               specialization != null ? specialization.name : 'No specialization chosen',
-              style: Theme.of(context).textTheme.bodyText1,
+              style: Theme.of(context).textTheme.bodyLarge,
             ),
           ),
           Container(

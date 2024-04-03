@@ -21,10 +21,10 @@ class ItemFlags extends StatelessWidget {
         children: flags
           .map((flag) => Chip(
             materialTapTargetSize: MaterialTapTargetSize.shrinkWrap,
-            backgroundColor: Theme.of(context).brightness == Brightness.light ? Theme.of(context).accentColor : Colors.white12,
+            backgroundColor: Theme.of(context).brightness == Brightness.light ? Theme.of(context).colorScheme.secondary : Colors.white12,
             label: Text(
               GuildWarsUtil.itemFlagToName(flag),
-              style: Theme.of(context).textTheme.bodyText1.copyWith(
+              style: Theme.of(context).textTheme.bodyLarge.copyWith(
                 color: Colors.white,
               ),
             ),

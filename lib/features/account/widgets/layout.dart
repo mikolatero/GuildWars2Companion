@@ -61,14 +61,14 @@ class _Header extends StatelessWidget {
               children: <Widget>[
                 Text(
                   'GW2 Companion',
-                  style: Theme.of(context).textTheme.headline1.copyWith(
+                  style: Theme.of(context).textTheme.displayLarge.copyWith(
                     fontWeight: FontWeight.w500
                   ),
                 ),
                 if (darkThemeTitle != null)
                   Text(
                     darkThemeTitle,
-                    style: Theme.of(context).textTheme.headline1.copyWith(
+                    style: Theme.of(context).textTheme.displayLarge.copyWith(
                       fontWeight: FontWeight.w300
                     ),
                   ),

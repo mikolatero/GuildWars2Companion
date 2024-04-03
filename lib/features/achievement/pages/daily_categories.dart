@@ -36,7 +36,7 @@ class DailyCategoriesPage extends StatelessWidget {
 
             if (state is LoadedAchievementsState) {
               return RefreshIndicator(
-                backgroundColor: Theme.of(context).accentColor,
+                backgroundColor: Theme.of(context).colorScheme.secondary,
                 color: Theme.of(context).cardColor,
                 onRefresh: () async {
                   BlocProvider.of<AchievementBloc>(context).add(LoadAchievementsEvent(

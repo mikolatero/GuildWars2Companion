@@ -159,7 +159,7 @@ class _DateSelector extends StatelessWidget {
               child: RichText(
                 text: TextSpan(
                   text: 'Date: ',
-                  style: Theme.of(context).textTheme.headline2.copyWith(
+                  style: Theme.of(context).textTheme.displayMedium.copyWith(
                     fontWeight: FontWeight.w500
                   ),
                   children: [
@@ -220,7 +220,7 @@ class _TimeSelector extends StatelessWidget {
                   padding: EdgeInsets.only(bottom: 8.0),
                   child: Text(
                     'Time:',
-                    style: Theme.of(context).textTheme.headline2
+                    style: Theme.of(context).textTheme.displayMedium
                   ),
                 ),
                 Wrap(
@@ -250,7 +250,7 @@ class _TimeSelector extends StatelessWidget {
                           padding: EdgeInsets.all(8.0),
                           label: Text(
                             timeFormat.format(time),
-                            style: Theme.of(context).textTheme.bodyText1.copyWith(
+                            style: Theme.of(context).textTheme.bodyLarge.copyWith(
                               color: Colors.white,
                               fontSize: 18
                             ),

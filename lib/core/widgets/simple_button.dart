@@ -21,7 +21,7 @@ class CompanionSimpleButton extends StatelessWidget {
           )),
           backgroundColor: MaterialStateProperty.all(
             Theme.of(context).brightness == Brightness.light
-              ? Theme.of(context).accentColor
+              ? Theme.of(context).colorScheme.secondary
               : Theme.of(context).cardColor
           )
         ),

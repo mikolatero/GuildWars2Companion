@@ -28,9 +28,9 @@ class CompanionCoin extends StatelessWidget {
             children: <Widget>[
               Text(
                 GuildWarsUtil.intToString(c.value),
-                style: Theme.of(context).brightness == Brightness.light ? Theme.of(context).textTheme.bodyText1.copyWith(
+                style: Theme.of(context).brightness == Brightness.light ? Theme.of(context).textTheme.bodyLarge.copyWith(
                   color: color
-                ) : Theme.of(context).textTheme.bodyText1,
+                ) : Theme.of(context).textTheme.bodyLarge,
               ),
               Container(
                 width: 16.0,

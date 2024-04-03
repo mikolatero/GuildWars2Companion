@@ -22,7 +22,7 @@ class AchievementPrerequisitesCard extends StatelessWidget {
             padding: EdgeInsets.only(top: 8.0, bottom: 8.0),
             child: Text(
               'Prerequisites',
-              style: Theme.of(context).textTheme.headline2,
+              style: Theme.of(context).textTheme.displayMedium,
             ),
           ),
           Column(

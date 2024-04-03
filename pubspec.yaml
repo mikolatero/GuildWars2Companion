@@ -15,7 +15,7 @@ dependencies:
   dio: ^3.0.9
   flutter_bloc: ^6.1.0
   flutter_local_notifications: ^1.4.4+4
-  flutter_speed_dial: ^1.2.5
+  flutter_speed_dial: ^2.1.0
   font_awesome_flutter: ^8.7.0
   intl: ^0.16.1
   meta: ^1.2.4
@@ -32,7 +32,7 @@ dependencies:
 dev_dependencies:
   flutter_test:
     sdk: flutter
-  mockito: ^4.1.1
+  mockito: ^5.0.0
 
 flutter:
   uses-material-design: true

@@ -66,7 +66,7 @@ class _ScheduleNotificationOffsetPageState extends State<ScheduleNotificationOff
                     value: d,
                     title: Text(
                       d.inMinutes == 0 ? 'At spawn time' : '${d.inMinutes} minutes before spawning',
-                      style: Theme.of(context).textTheme.headline2,
+                      style: Theme.of(context).textTheme.displayMedium,
                     ),
                     onChanged: (d) => setState(() => _offset = d),
                   ))

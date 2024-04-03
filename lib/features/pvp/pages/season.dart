@@ -43,13 +43,13 @@ class SeasonPage extends StatelessWidget {
                     padding: EdgeInsets.only(bottom: 4.0),
                     child: Text(
                       standing.season.name,
-                      style: Theme.of(context).textTheme.headline1,
+                      style: Theme.of(context).textTheme.displayLarge,
                     ),
                   ),
                   Text(
                     _dateFormat.format(DateTime.parse(standing.season.start)) +
                           (standing.season.end != null ? ' - ' + _dateFormat.format(DateTime.parse(standing.season.end)) : ''),
-                    style: Theme.of(context).textTheme.bodyText1.copyWith(
+                    style: Theme.of(context).textTheme.bodyLarge.copyWith(
                       color: Colors.white
                     ),
                   )
@@ -78,7 +78,7 @@ class SeasonPage extends StatelessWidget {
                                   padding: EdgeInsets.only(bottom: 4.0),
                                   child: Text(
                                     d.name,
-                                    style: Theme.of(context).textTheme.bodyText1,
+                                    style: Theme.of(context).textTheme.bodyLarge,
                                     textAlign: TextAlign.center,
                                   ),
                                 ),

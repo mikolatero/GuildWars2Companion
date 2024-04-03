@@ -99,7 +99,7 @@ class _TradingPostExpandableDeliveryState extends State<TradingPostExpandableDel
                             RichText(
                               text: TextSpan(
                                 text: 'Items: ',
-                                style: Theme.of(context).textTheme.bodyText1.copyWith(
+                                style: Theme.of(context).textTheme.bodyLarge.copyWith(
                                   fontWeight: FontWeight.w500
                                 ),
                                 children: [
@@ -116,7 +116,7 @@ class _TradingPostExpandableDeliveryState extends State<TradingPostExpandableDel
                               children: <Widget>[
                                 Text(
                                   'Funds: ',
-                                  style: Theme.of(context).textTheme.bodyText1.copyWith(
+                                  style: Theme.of(context).textTheme.bodyLarge.copyWith(
                                     fontWeight: FontWeight.w500
                                   ),
                                 ),
@@ -147,7 +147,7 @@ class _TradingPostExpandableDeliveryState extends State<TradingPostExpandableDel
                     child: Center(
                       child: Text(
                         'No items found',
-                        style: Theme.of(context).textTheme.headline2,
+                        style: Theme.of(context).textTheme.displayMedium,
                       ),
                     ),
                   );

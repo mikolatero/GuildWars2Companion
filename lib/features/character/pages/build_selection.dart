@@ -62,7 +62,7 @@ class CharacterBuildSelectionPage extends StatelessWidget {
               }
 
               return RefreshIndicator(
-                backgroundColor: Theme.of(context).accentColor,
+                backgroundColor: Theme.of(context).colorScheme.secondary,
                 color: Theme.of(context).cardColor,
                 onRefresh: () async {
                   BlocProvider.of<CharacterBloc>(context).add(RefreshCharacterDetailsEvent());

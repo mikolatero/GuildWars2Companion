@@ -58,7 +58,7 @@ class CharacterPage extends StatelessWidget {
                       ),
                       Text(
                         _character.name,
-                        style: Theme.of(context).textTheme.headline6.copyWith(
+                        style: Theme.of(context).textTheme.titleLarge.copyWith(
                           color: Colors.white
                         )
                       )
@@ -67,7 +67,7 @@ class CharacterPage extends StatelessWidget {
                   if (_character.titleName != null && _character.titleName.isNotEmpty)
                     Text(
                       _character.titleName,
-                      style: Theme.of(context).textTheme.bodyText1.copyWith(
+                      style: Theme.of(context).textTheme.bodyLarge.copyWith(
                         color: Colors.white
                       )
                     ),
@@ -152,7 +152,7 @@ class _CharacterButtons extends StatelessWidget {
         if (state is AuthenticatedState) {
           return Expanded(
             child: RefreshIndicator(
-              backgroundColor: Theme.of(context).accentColor,
+              backgroundColor: Theme.of(context).colorScheme.secondary,
               color: Theme.of(context).cardColor,
               onRefresh: () async {
                 BlocProvider.of<CharacterBloc>(context).add(LoadCharactersEvent());

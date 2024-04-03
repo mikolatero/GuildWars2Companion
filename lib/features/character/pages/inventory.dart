@@ -64,7 +64,7 @@ class InventoryPage extends StatelessWidget {
               }
 
               return RefreshIndicator(
-                backgroundColor: Theme.of(context).accentColor,
+                backgroundColor: Theme.of(context).colorScheme.secondary,
                 color: Theme.of(context).cardColor,
                 onRefresh: () async {
                   BlocProvider.of<CharacterBloc>(context).add(RefreshCharacterDetailsEvent());
@@ -126,7 +126,7 @@ class _InventoryBag extends StatelessWidget {
                       padding: const EdgeInsets.all(8.0),
                       child: Text(
                         bag.itemInfo.name,
-                        style: Theme.of(context).textTheme.bodyText1.copyWith(
+                        style: Theme.of(context).textTheme.bodyLarge.copyWith(
                           fontWeight: FontWeight.w500
                         )
                       ),
@@ -136,7 +136,7 @@ class _InventoryBag extends StatelessWidget {
                   Spacer(),
                 Text(
                   '${inventory.length}/${bag.size}',
-                  style: Theme.of(context).textTheme.bodyText1.copyWith(
+                  style: Theme.of(context).textTheme.bodyLarge.copyWith(
                     fontStyle: inventory.length == bag.size ? FontStyle.italic : FontStyle.normal
                   ),
                 )

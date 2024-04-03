@@ -51,7 +51,7 @@ class MetaEventPage extends StatelessWidget {
                   MetaEventSequence _sequence = state.events.firstWhere((e) => e.id == metaEventSequence.id);
 
                   return RefreshIndicator(
-                    backgroundColor: Theme.of(context).accentColor,
+                    backgroundColor: Theme.of(context).colorScheme.secondary,
                     color: Theme.of(context).cardColor,
                     onRefresh: () async {
                       BlocProvider.of<MetaEventBloc>(context).add(LoadMetaEventsEvent());
@@ -118,7 +118,7 @@ class _EventButton extends StatelessWidget {
                 if (segment.time.isBefore(now)) {
                   return Text(
                     'Active',
-                    style: Theme.of(context).textTheme.headline2.copyWith(
+                    style: Theme.of(context).textTheme.displayMedium.copyWith(
                       color: Colors.white,
                     ),
                   );
@@ -126,7 +126,7 @@ class _EventButton extends StatelessWidget {
                   
                 return Text(
                   GuildWarsUtil.durationToString(segment.time.difference(DateTime.now())),
-                  style: Theme.of(context).textTheme.headline2.copyWith(
+                  style: Theme.of(context).textTheme.displayMedium.copyWith(
                     color: Colors.white
                   ),
                 );
@@ -134,7 +134,7 @@ class _EventButton extends StatelessWidget {
             ),
             Text(
               timeFormat.format(segment.time),
-              style: Theme.of(context).textTheme.bodyText1.copyWith(
+              style: Theme.of(context).textTheme.bodyLarge.copyWith(
                 color: Colors.white
               ),
             )

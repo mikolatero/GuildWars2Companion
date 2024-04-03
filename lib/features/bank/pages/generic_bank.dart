@@ -42,7 +42,7 @@ class GenericBankPage extends StatelessWidget {
 
             if (state is LoadedBankState) {
               return RefreshIndicator(
-                backgroundColor: Theme.of(context).accentColor,
+                backgroundColor: Theme.of(context).colorScheme.secondary,
                 color: Theme.of(context).cardColor,
                 onRefresh: () async {
                   BlocProvider.of<BankBloc>(context).add(LoadBankEvent());
@@ -88,7 +88,7 @@ class _BankListView extends StatelessWidget {
                   padding: EdgeInsets.all(8.0),
                   child: Text(
                     "${bankTab.where((i) => i.id != -1).length} / ${bankTab.length} slots",
-                    style: Theme.of(context).textTheme.headline2,
+                    style: Theme.of(context).textTheme.displayMedium,
                   ),
                 ),
                 Container(

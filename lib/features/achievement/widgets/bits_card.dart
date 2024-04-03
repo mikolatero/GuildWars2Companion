@@ -24,7 +24,7 @@ class AchievementBitsCard extends StatelessWidget {
               padding: EdgeInsets.only(bottom: 8.0),
               child: Text(
                 'Objectives',
-                style: Theme.of(context).textTheme.headline2,
+                style: Theme.of(context).textTheme.displayMedium,
               ),
             ),
             Column(
@@ -53,7 +53,7 @@ class AchievementBitsCard extends StatelessWidget {
                         padding: EdgeInsets.all(4.0),
                         child: Text(
                           i.text,
-                          style: Theme.of(context).textTheme.bodyText1,
+                          style: Theme.of(context).textTheme.bodyLarge,
                           textAlign: TextAlign.left,
                           overflow: TextOverflow.ellipsis,
                         ),
@@ -75,7 +75,7 @@ class AchievementBitsCard extends StatelessWidget {
             padding: EdgeInsets.only(bottom: 8.0),
             child: Text(
               'Collection',
-              style: Theme.of(context).textTheme.headline2,
+              style: Theme.of(context).textTheme.displayMedium,
             ),
           ),
           Column(
@@ -128,7 +128,7 @@ class _ItemBit extends StatelessWidget {
         children: <Widget>[
           Text(
             'Unknown item',
-            style: Theme.of(context).textTheme.bodyText1,
+            style: Theme.of(context).textTheme.bodyLarge,
           ),
         ],
       );
@@ -153,7 +153,7 @@ class _ItemBit extends StatelessWidget {
               padding: EdgeInsets.all(4.0),
               child: Text(
                 bit.item.name,
-                style: Theme.of(context).textTheme.bodyText1,
+                style: Theme.of(context).textTheme.bodyLarge,
                 textAlign: TextAlign.left,
                 overflow: TextOverflow.ellipsis,
               ),
@@ -219,7 +219,7 @@ class _SkinItemBit extends StatelessWidget {
               padding: EdgeInsets.all(4.0),
               child: Text(
                 bit.type == 'Skin' ? bit.skin.name : bit.mini.name,
-                style: Theme.of(context).textTheme.bodyText1,
+                style: Theme.of(context).textTheme.bodyLarge,
                 textAlign: TextAlign.left,
                 overflow: TextOverflow.ellipsis,
               ),

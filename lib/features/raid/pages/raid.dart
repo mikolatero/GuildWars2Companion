@@ -52,7 +52,7 @@ class RaidPage extends StatelessWidget {
                     padding: EdgeInsets.all(4.0),
                     child: Text(
                       raid.name,
-                      style: Theme.of(context).textTheme.headline1,
+                      style: Theme.of(context).textTheme.displayLarge,
                       textAlign: TextAlign.center,
                     ),
                   ),
@@ -77,7 +77,7 @@ class RaidPage extends StatelessWidget {
 
                     if (_raid != null) {
                       return RefreshIndicator(
-                        backgroundColor: Theme.of(context).accentColor,
+                        backgroundColor: Theme.of(context).colorScheme.secondary,
                         color: Theme.of(context).cardColor,
                         onRefresh: () async {
                           BlocProvider.of<RaidBloc>(context).add(LoadRaidsEvent(state.includeProgress));
@@ -143,7 +143,7 @@ class _ProgressCard extends StatelessWidget {
                   padding: EdgeInsets.all(4.0),
                   child: Text(
                     p.name,
-                    style: Theme.of(context).textTheme.bodyText1,
+                    style: Theme.of(context).textTheme.bodyLarge,
                     textAlign: TextAlign.left,
                     overflow: TextOverflow.ellipsis,
                   ),

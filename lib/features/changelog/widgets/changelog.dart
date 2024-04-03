@@ -90,7 +90,7 @@ class _ChangelogLayout extends StatelessWidget {
                       ),
                       Text(
                         'Welcome back!',
-                        style: Theme.of(context).textTheme.headline1.copyWith(
+                        style: Theme.of(context).textTheme.displayLarge.copyWith(
                           fontSize: 28,
                           fontWeight: FontWeight.w500
                         ),
@@ -101,7 +101,7 @@ class _ChangelogLayout extends StatelessWidget {
                     children: <Widget>[
                       Text(
                         'Since your last visit, the following new features have been added to the app:',
-                        style: Theme.of(context).textTheme.headline2.copyWith(
+                        style: Theme.of(context).textTheme.displayMedium.copyWith(
                           color: Colors.white
                         ),
                         textAlign: TextAlign.center,
@@ -123,7 +123,7 @@ class _ChangelogLayout extends StatelessWidget {
                                 Expanded(
                                   child: Text(
                                     c,
-                                    style: Theme.of(context).textTheme.bodyText1.copyWith(
+                                    style: Theme.of(context).textTheme.bodyLarge.copyWith(
                                       color: Colors.white
                                     ),
                                   ),

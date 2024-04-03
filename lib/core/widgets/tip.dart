@@ -26,7 +26,7 @@ class CompanionTip extends StatelessWidget {
             child: RichText(
               text: TextSpan(
                 text: 'Tip: ',
-                style: Theme.of(context).textTheme.bodyText1.copyWith(
+                style: Theme.of(context).textTheme.bodyLarge.copyWith(
                   fontWeight: FontWeight.w500
                 ),
                 children: [

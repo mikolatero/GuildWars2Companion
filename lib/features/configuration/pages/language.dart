@@ -34,7 +34,7 @@ class LanguageConfigurationPage extends StatelessWidget {
                   value: language.value,
                   title: Text(
                     language.name,
-                    style: Theme.of(context).textTheme.bodyText1,
+                    style: Theme.of(context).textTheme.bodyLarge,
                   ),
                   onChanged: (lang) => _changeLanguageDialog(
                     context: context,

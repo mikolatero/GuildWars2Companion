@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:flutter/services.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:flutter_speed_dial/flutter_speed_dial.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
@@ -26,7 +25,7 @@ class TokenPage extends StatelessWidget {
               ScaffoldMessenger.of(context).showSnackBar(SnackBar(
                 content: Text(
                   state.message,
-                  style: Theme.of(context).textTheme.headline2.copyWith(color: Colors.white)
+                  style: Theme.of(context).textTheme.displayMedium.copyWith(color: Colors.white)
                 ),
                 backgroundColor: state.tokenAdded || state.tokenRemoved ? Colors.green : Colors.red,
               ));
@@ -239,7 +238,7 @@ class _SpeedDailLabel extends StatelessWidget {
         ),
         child: Text(
           label,
-          style: Theme.of(context).textTheme.bodyText1.copyWith(
+          style: Theme.of(context).textTheme.bodyLarge.copyWith(
             fontWeight: FontWeight.w500
           ),
         ),

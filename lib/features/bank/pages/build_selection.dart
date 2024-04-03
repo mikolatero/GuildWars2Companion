@@ -33,7 +33,7 @@ class BankBuildSelectionPage extends StatelessWidget {
 
             if (state is LoadedBankState) {
               return RefreshIndicator(
-                backgroundColor: Theme.of(context).accentColor,
+                backgroundColor: Theme.of(context).colorScheme.secondary,
                 color: Theme.of(context).cardColor,
                 onRefresh: () async {
                   BlocProvider.of<BankBloc>(context).add(LoadBankEvent());

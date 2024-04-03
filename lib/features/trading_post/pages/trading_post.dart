@@ -170,7 +170,7 @@ class _TransactionTab extends StatelessWidget {
                 padding: EdgeInsets.all(16.0),
                 child: Text(
                   'No items found',
-                  style: Theme.of(context).textTheme.headline2,
+                  style: Theme.of(context).textTheme.displayMedium,
                 ),
               ),
             ),

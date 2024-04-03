@@ -94,7 +94,7 @@ class AchievementPage extends StatelessWidget {
                     hero: hero,
                     displayFavorite: true,
                     child: RefreshIndicator(
-                      backgroundColor: Theme.of(context).accentColor,
+                      backgroundColor: Theme.of(context).colorScheme.secondary,
                       color: Theme.of(context).cardColor,
                       onRefresh: () async {
                         BlocProvider.of<AchievementBloc>(context).add(RefreshAchievementProgressEvent(
@@ -192,7 +192,7 @@ class _AchievementPageLayout extends StatelessWidget {
                   children: <Widget>[
                     Text(
                       '${achievement.progress.points} / ${achievement.maxPoints}',
-                      style: Theme.of(context).textTheme.bodyText1.copyWith(
+                      style: Theme.of(context).textTheme.bodyLarge.copyWith(
                         color: Colors.white
                       ),
                     ),
@@ -216,7 +216,7 @@ class _AchievementPageLayout extends StatelessWidget {
                         children: <Widget>[
                           Text(
                             '${(progress * 100).round()}%',
-                            style: Theme.of(context).textTheme.bodyText1.copyWith(
+                            style: Theme.of(context).textTheme.bodyLarge.copyWith(
                               color: Colors.white
                             ),
                           ),
@@ -242,7 +242,7 @@ class _AchievementPageLayout extends StatelessWidget {
                 padding: EdgeInsets.only(top: 4.0),
                 child: Text(
                   achievement.name,
-                  style: Theme.of(context).textTheme.headline1,
+                  style: Theme.of(context).textTheme.displayLarge,
                   textAlign: TextAlign.center,
                 ),
               ),
@@ -251,7 +251,7 @@ class _AchievementPageLayout extends StatelessWidget {
                   padding: EdgeInsets.only(top: 4.0),
                   child: Text(
                     achievement.categoryName,
-                    style: Theme.of(context).textTheme.bodyText1.copyWith(
+                    style: Theme.of(context).textTheme.bodyLarge.copyWith(
                       color: Colors.white
                     ),
                     textAlign: TextAlign.center,

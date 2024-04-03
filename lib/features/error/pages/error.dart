@@ -32,19 +32,19 @@ class ErrorPage extends StatelessWidget {
                     Container(height: 16),
                     Text(
                       'There was an error while loading GW2 Companion',
-                      style: Theme.of(context).textTheme.headline1,
+                      style: Theme.of(context).textTheme.displayLarge,
                       textAlign: TextAlign.center,
                     ),
                     Container(height: MediaQuery.of(context).size.height / 7),
                     Text(
                       'You can send the error log to the developer to get the issue fixed.',
-                      style: Theme.of(context).textTheme.headline2.copyWith(color: Colors.white),
+                      style: Theme.of(context).textTheme.displayMedium.copyWith(color: Colors.white),
                       textAlign: TextAlign.center,
                     ),
                     Container(height: 16),
                     Text(
                       'You will be contacted shortly afterwards with an estimation on when the issue will be fixed.',
-                      style: Theme.of(context).textTheme.headline2.copyWith(color: Colors.white),
+                      style: Theme.of(context).textTheme.displayMedium.copyWith(color: Colors.white),
                       textAlign: TextAlign.center,
                     ),
                     Container(height: 16),
@@ -131,7 +131,7 @@ class _CopyLogsButton extends StatelessWidget {
             ScaffoldMessenger.of(context).showSnackBar(SnackBar(
               content: Text(
                 'Error log copied to clipboard',
-                style: Theme.of(context).textTheme.headline2.copyWith(color: Colors.white)
+                style: Theme.of(context).textTheme.displayMedium.copyWith(color: Colors.white)
               ),
               backgroundColor: Colors.green,
             ));

@@ -24,7 +24,7 @@ class CompanionInfoCard extends StatelessWidget {
             padding: EdgeInsets.all(8.0),
             child: Text(
               title,
-              style: Theme.of(context).textTheme.headline2,
+              style: Theme.of(context).textTheme.displayMedium,
             ),
           ),
           if (text != null)
@@ -32,7 +32,7 @@ class CompanionInfoCard extends StatelessWidget {
               padding: childPadding,
               child: Text(
                 text,
-                style: Theme.of(context).textTheme.bodyText1,
+                style: Theme.of(context).textTheme.bodyLarge,
               ),
             ),
           if (child != null)

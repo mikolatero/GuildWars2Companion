@@ -198,7 +198,7 @@ class _ListingTab extends StatelessWidget {
   Widget build(BuildContext context) {
     if (offers.isEmpty) {
       return RefreshIndicator(
-        backgroundColor: Theme.of(context).accentColor,
+        backgroundColor: Theme.of(context).colorScheme.secondary,
         color: Theme.of(context).cardColor,
         onRefresh: () async {
           BlocProvider.of<TradingPostBloc>(context).add(LoadTradingPostListingsEvent(
@@ -213,7 +213,7 @@ class _ListingTab extends StatelessWidget {
                 padding: EdgeInsets.all(16.0),
                 child: Text(
                   errorMessage,
-                  style: Theme.of(context).textTheme.headline2,
+                  style: Theme.of(context).textTheme.displayMedium,
                 ),
               ),
             ),
@@ -223,7 +223,7 @@ class _ListingTab extends StatelessWidget {
     }
 
     return RefreshIndicator(
-      backgroundColor: Theme.of(context).accentColor,
+      backgroundColor: Theme.of(context).colorScheme.secondary,
       color: Theme.of(context).cardColor,
       onRefresh: () async {
         BlocProvider.of<TradingPostBloc>(context).add(LoadTradingPostListingsEvent(

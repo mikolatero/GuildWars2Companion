@@ -36,7 +36,7 @@ class PvpGamesPage extends StatelessWidget {
               return Center(
                 child: Text(
                   'No pvp games found',
-                  style: Theme.of(context).textTheme.headline2,
+                  style: Theme.of(context).textTheme.displayMedium,
                 ),
               );
             }
@@ -58,11 +58,11 @@ class PvpGamesPage extends StatelessWidget {
                               children: <Widget>[
                                 Text(
                                   g.map.name,
-                                  style: Theme.of(context).textTheme.headline2,
+                                  style: Theme.of(context).textTheme.displayMedium,
                                 ),
                                 Text(
                                   _dateFormat.format(DateTime.parse(g.started)),
-                                  style: Theme.of(context).textTheme.bodyText1,
+                                  style: Theme.of(context).textTheme.bodyLarge,
                                 ),
                               ],
                             ),
@@ -73,14 +73,14 @@ class PvpGamesPage extends StatelessWidget {
                             children: <Widget>[
                               Text(
                                 g.result,
-                                style: Theme.of(context).textTheme.bodyText1.copyWith(
+                                style: Theme.of(context).textTheme.bodyLarge.copyWith(
                                   fontWeight: FontWeight.w500,
                                   color: _getGameResultColor(g.result)
                                 ),
                               ),
                               Text(
                                 g.ratingType,
-                                style: Theme.of(context).textTheme.bodyText1.copyWith(
+                                style: Theme.of(context).textTheme.bodyLarge.copyWith(
                                   fontWeight: FontWeight.w500,
                                 ),
                               ),
@@ -93,14 +93,14 @@ class PvpGamesPage extends StatelessWidget {
                             children: <Widget>[
                               Text(
                                 g.scores.blue.toString(),
-                                style: Theme.of(context).textTheme.bodyText1.copyWith(
+                                style: Theme.of(context).textTheme.bodyLarge.copyWith(
                                   fontWeight: FontWeight.w500,
                                   color: Colors.blue
                                 ),
                               ),
                               Text(
                                 g.scores.red.toString(),
-                                style: Theme.of(context).textTheme.bodyText1.copyWith(
+                                style: Theme.of(context).textTheme.bodyLarge.copyWith(
                                   fontWeight: FontWeight.w500,
                                   color: Colors.red
                                 ),

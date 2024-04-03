@@ -2,29 +2,27 @@ import 'package:flutter/material.dart';
 
 ThemeData lightTheme = ThemeData(
   brightness: Brightness.light,
-  primarySwatch: Colors.red,
   primaryColor: Color(0xFFAA0404),
-  accentColor: Colors.red,
   cardColor: Colors.white,
   scaffoldBackgroundColor: Color(0xFFEEEEEE),
   textSelectionTheme: TextSelectionThemeData(
     cursorColor: Color(0xFFAA0404)
   ),
   textTheme: TextTheme(
-    headline1: TextStyle(
+    displayLarge: TextStyle(
       fontSize: 22.0,
       color: Colors.white,
       fontWeight: FontWeight.normal
     ),
-    headline2: TextStyle(
+    displayMedium: TextStyle(
       fontSize: 18.0,
       color: Colors.black,
       fontWeight: FontWeight.w500,
     ),
-    bodyText1: TextStyle(
+    bodyLarge: TextStyle(
       fontSize: 16.0,
       color: Colors.black,
       fontWeight: FontWeight.normal,
     ),
-  )
+  ), colorScheme: ColorScheme.fromSwatch(primarySwatch: Colors.red).copyWith(secondary: Colors.red)
 );

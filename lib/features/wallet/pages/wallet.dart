@@ -34,7 +34,7 @@ class WalletPage extends StatelessWidget {
 
             if (state is LoadedWalletState) {
               return RefreshIndicator(
-                backgroundColor: Theme.of(context).accentColor,
+                backgroundColor: Theme.of(context).colorScheme.secondary,
                 color: Theme.of(context).cardColor,
                 onRefresh: () async {
                   BlocProvider.of<WalletBloc>(context).add(LoadWalletEvent());
@@ -83,7 +83,7 @@ class _CurrencyRow extends StatelessWidget {
           Expanded(
             child: Text(
               currency.name,
-              style: Theme.of(context).textTheme.bodyText1.copyWith(
+              style: Theme.of(context).textTheme.bodyLarge.copyWith(
                 fontWeight: FontWeight.w500
               )
             ),
@@ -94,7 +94,7 @@ class _CurrencyRow extends StatelessWidget {
               child: CompanionCoin(
                 currency.value,
                 innerPadding: 6.0,
-                color: Theme.of(context).textTheme.bodyText1.color
+                color: Theme.of(context).textTheme.bodyLarge.color
               ),
             )
           else
@@ -104,7 +104,7 @@ class _CurrencyRow extends StatelessWidget {
                 children: <Widget>[
                   Text(
                     GuildWarsUtil.intToString(currency.value),
-                    style: Theme.of(context).textTheme.bodyText1,
+                    style: Theme.of(context).textTheme.bodyLarge,
                   ),
                   Container(
                     width: 20.0,

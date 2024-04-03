@@ -108,7 +108,7 @@ class _Body extends StatelessWidget {
                 ),
                 Text(
                   'Rank ${pvpStats.pvpRank}',
-                  style: Theme.of(context).textTheme.headline1,
+                  style: Theme.of(context).textTheme.displayLarge,
                 ),
                 if (pvpStats.pvpRankPointsNeeded != null && pvpStats.pvpRank < 80)
                   Container(
@@ -151,7 +151,7 @@ class _Body extends StatelessWidget {
           ),
           Expanded(
             child: RefreshIndicator(
-              backgroundColor: Theme.of(context).accentColor,
+              backgroundColor: Theme.of(context).colorScheme.secondary,
               color: Theme.of(context).cardColor,
               onRefresh: () async {
                 BlocProvider.of<PvpBloc>(context).add(LoadPvpEvent());

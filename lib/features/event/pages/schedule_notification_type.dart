@@ -41,11 +41,11 @@ class _ScheduleNotificationTypePageState extends State<ScheduleNotificationTypeP
                     value: e,
                     title: Text(
                       e == NotificationType.DAILY ? 'Daily notification' : 'One-time notification',
-                      style: Theme.of(context).textTheme.headline2,
+                      style: Theme.of(context).textTheme.displayMedium,
                     ),
                     subtitle: Text(
                       e == NotificationType.DAILY ? 'Receive a daily notification at the selected time' : 'Receive a single notification at the selected date and time',
-                      style: Theme.of(context).textTheme.bodyText1,
+                      style: Theme.of(context).textTheme.bodyLarge,
                     ),
                     onChanged: (t) => setState(() => _notificationType = t),
                   ))

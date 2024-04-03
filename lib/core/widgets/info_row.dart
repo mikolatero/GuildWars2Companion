@@ -33,7 +33,7 @@ class CompanionInfoRow extends StatelessWidget {
                 children: <Widget>[
                   Text(
                     header,
-                    style: Theme.of(context).textTheme.bodyText1.copyWith(
+                    style: Theme.of(context).textTheme.bodyLarge.copyWith(
                       fontWeight: FontWeight.w500
                     ),
                   ),
@@ -47,7 +47,7 @@ class CompanionInfoRow extends StatelessWidget {
             Expanded(
               child: Text(
                 text,
-                style: Theme.of(context).textTheme.bodyText1,
+                style: Theme.of(context).textTheme.bodyLarge,
                 textAlign: TextAlign.end,
               ),
             )

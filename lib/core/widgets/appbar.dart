@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter/services.dart';
 
 class CompanionAppBar extends StatelessWidget implements PreferredSizeWidget {
   final String title;
@@ -23,7 +24,6 @@ class CompanionAppBar extends StatelessWidget implements PreferredSizeWidget {
   Widget build(BuildContext context) {
     return AppBar(
       automaticallyImplyLeading: implyLeading,
-      brightness: Brightness.dark,
       iconTheme: IconThemeData(
         color: foregroundColor,
       ),
@@ -52,7 +52,7 @@ class CompanionAppBar extends StatelessWidget implements PreferredSizeWidget {
       ),
       backgroundColor: Theme.of(context).brightness == Brightness.light ? color : Theme.of(context).cardColor,
       elevation: Theme.of(context).brightness == Brightness.light ? elevation : 0.0,
-      bottom: bottom,
+      bottom: bottom, systemOverlayStyle: SystemUiOverlayStyle.light,
     );
   }
 

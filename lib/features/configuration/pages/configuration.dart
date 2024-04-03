@@ -37,13 +37,13 @@ class ConfigurationPage extends StatelessWidget {
                 Container(height: 4.0,),
                 Text(
                   'Guild Wars 2 Companion',
-                  style: Theme.of(context).textTheme.headline1.copyWith(
-                    color: Theme.of(context).textTheme.headline2.color,
+                  style: Theme.of(context).textTheme.displayLarge.copyWith(
+                    color: Theme.of(context).textTheme.displayMedium.color,
                   )
                 ),
                 Text(
                   'By Daniël Scholte / Revolt.2860',
-                  style: Theme.of(context).textTheme.bodyText1
+                  style: Theme.of(context).textTheme.bodyLarge
                 ),
                 _AppVersion()
               ],
@@ -57,14 +57,14 @@ class ConfigurationPage extends StatelessWidget {
                   padding: EdgeInsets.symmetric(horizontal: 16.0, vertical: 4.0),
                   child: Text(
                     'Thanks to the Guild Wars 2 Wiki and GW2.Ninja for the event timers.',
-                    style: Theme.of(context).textTheme.bodyText1
+                    style: Theme.of(context).textTheme.bodyLarge
                   ),
                 ),
                 Padding(
                   padding: EdgeInsets.symmetric(horizontal: 16.0, vertical: 4.0),
                   child: Text(
                     '©2010–2018 ArenaNet, LLC. All rights reserved. Guild Wars, Guild Wars 2, Heart of Thorns, Guild Wars 2: Path of Fire, ArenaNet, NCSOFT, the Interlocking NC Logo, and all associated logos and designs are trademarks or registered trademarks of NCSOFT Corporation. All other trademarks are the property of their respective owners.',
-                    style: Theme.of(context).textTheme.bodyText1
+                    style: Theme.of(context).textTheme.bodyLarge
                   ),
                 ),
                 Container(height: 4.0,),
@@ -165,12 +165,12 @@ class ConfigurationPage extends StatelessWidget {
                 Container(height: 8.0,),
                 Text(
                   'Enjoying the app?',
-                  style: Theme.of(context).textTheme.headline2,
+                  style: Theme.of(context).textTheme.displayMedium,
                   textAlign: TextAlign.center,
                 ),
                 Text(
                   'Review the app on the ${_getPlatformName()}!',
-                  style: Theme.of(context).textTheme.bodyText1,
+                  style: Theme.of(context).textTheme.bodyLarge,
                   textAlign: TextAlign.center,
                 ),
                 SafeArea(
@@ -192,7 +192,7 @@ class ConfigurationPage extends StatelessWidget {
                           Container(width: 8.0,),
                           Text(
                             'Review the app',
-                            style: Theme.of(context).textTheme.headline2,
+                            style: Theme.of(context).textTheme.displayMedium,
                           )
                         ],
                       ),
@@ -240,7 +240,7 @@ class _AppVersion extends StatelessWidget {
 
         return Text(
           'Version ${snapshot.data.version} - Build ${snapshot.data.buildNumber}',
-          style: Theme.of(context).textTheme.bodyText1.copyWith(
+          style: Theme.of(context).textTheme.bodyLarge.copyWith(
             color: Theme.of(context).brightness == Brightness.dark ? Colors.white : Colors.black
           )
         );

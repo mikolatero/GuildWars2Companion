@@ -100,13 +100,13 @@ class _EventHeader extends StatelessWidget {
             padding: EdgeInsets.all(4.0),
             child: Text(
               segment.name,
-              style: Theme.of(context).textTheme.headline1,
+              style: Theme.of(context).textTheme.displayLarge,
               textAlign: TextAlign.center,
             ),
           ),
           Text(
             sequence.name,
-            style: Theme.of(context).textTheme.bodyText1.copyWith(
+            style: Theme.of(context).textTheme.bodyLarge.copyWith(
               color: Colors.white
             ),
             textAlign: TextAlign.center,
@@ -157,13 +157,13 @@ class _WorldBossHeader extends StatelessWidget {
             padding: EdgeInsets.all(4.0),
             child: Text(
               worldBoss.name,
-              style: Theme.of(context).textTheme.headline1,
+              style: Theme.of(context).textTheme.displayLarge,
               textAlign: TextAlign.center,
             ),
           ),
           Text(
             worldBoss.location,
-            style: Theme.of(context).textTheme.bodyText1.copyWith(
+            style: Theme.of(context).textTheme.bodyLarge.copyWith(
               color: Colors.white
             ),
             textAlign: TextAlign.center,

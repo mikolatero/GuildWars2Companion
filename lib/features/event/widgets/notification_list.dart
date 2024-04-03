@@ -58,7 +58,7 @@ class _EventNotificationListState extends State<EventNotificationList> {
                   padding: EdgeInsets.only(bottom: 8.0),
                   child: Text(
                     'No notifications scheduled for this event',
-                    style: Theme.of(context).textTheme.bodyText1,
+                    style: Theme.of(context).textTheme.bodyLarge,
                     textAlign: TextAlign.center,
                   ),
                 );
@@ -75,7 +75,7 @@ class _EventNotificationListState extends State<EventNotificationList> {
                       ),
                       Text(
                         'No notifications scheduled',
-                        style: Theme.of(context).textTheme.headline2,
+                        style: Theme.of(context).textTheme.displayMedium,
                         textAlign: TextAlign.center,
                       ),
                     ],
@@ -188,17 +188,17 @@ class _NotificationRow extends StatelessWidget {
                       if (eventId == null)
                         Text(
                           notification.eventName,
-                          style: Theme.of(context).textTheme.bodyText1,
+                          style: Theme.of(context).textTheme.bodyLarge,
                         ),
                       if (notification.type == NotificationType.DAILY)
                         Text(
                           '$leading ${timeFormat.format(notification.spawnDateTime)}',
-                          style: Theme.of(context).textTheme.bodyText1,
+                          style: Theme.of(context).textTheme.bodyLarge,
                         )
                       else
                         Text(
                           '$leading $date ${timeFormat.format(notification.spawnDateTime)}',
-                          style: Theme.of(context).textTheme.bodyText1,
+                          style: Theme.of(context).textTheme.bodyLarge,
                         )
                     ],
                   ),

@@ -110,7 +110,7 @@ class _Trailing extends StatelessWidget {
             children: <Widget>[
               Text(
                 points.toString(),
-                style: Theme.of(context).textTheme.bodyText1.copyWith(
+                style: Theme.of(context).textTheme.bodyLarge.copyWith(
                   color: Colors.white
                 ),
               ),

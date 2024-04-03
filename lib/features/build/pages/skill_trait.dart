@@ -89,14 +89,14 @@ class _SkillTraitHeader extends StatelessWidget {
             padding: EdgeInsets.all(4.0),
             child: Text(
               skillTrait.name,
-              style: Theme.of(context).textTheme.headline1,
+              style: Theme.of(context).textTheme.displayLarge,
               textAlign: TextAlign.center,
             ),
           ),
           if (skillTrait.type != null || slotType != null)
             Text(
               skillTrait.type ?? slotType,
-              style: Theme.of(context).textTheme.bodyText1.copyWith(
+              style: Theme.of(context).textTheme.bodyLarge.copyWith(
                 color: Colors.white
               ),
               textAlign: TextAlign.center,

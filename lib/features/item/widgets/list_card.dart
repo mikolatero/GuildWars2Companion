@@ -32,7 +32,7 @@ class ItemListCard extends StatelessWidget {
                 padding: EdgeInsets.all(4.0),
                 child: Text(
                   items[index].name,
-                  style: Theme.of(context).textTheme.bodyText1,
+                  style: Theme.of(context).textTheme.bodyLarge,
                   textAlign: TextAlign.center,
                 ),
               )

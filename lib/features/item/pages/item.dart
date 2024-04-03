@@ -93,13 +93,13 @@ class _Header extends StatelessWidget {
             padding: EdgeInsets.all(4.0),
             child: Text(
               skin != null ? skin.name : item.name,
-              style: Theme.of(context).textTheme.headline1,
+              style: Theme.of(context).textTheme.displayLarge,
               textAlign: TextAlign.center,
             ),
           ),
           Text(
             item.type != null ? GuildWarsUtil.itemTypeToName(item.type) : '',
-            style: Theme.of(context).textTheme.bodyText1.copyWith(
+            style: Theme.of(context).textTheme.bodyLarge.copyWith(
               color: Colors.white
             ),
             textAlign: TextAlign.center,

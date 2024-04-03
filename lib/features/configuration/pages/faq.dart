@@ -17,7 +17,7 @@ class FaqPage extends StatelessWidget {
           children: <Widget>[
             Text(
               'Why are my achievement points or mastery level incorrect?',
-              style: Theme.of(context).textTheme.headline2,
+              style: Theme.of(context).textTheme.displayMedium,
             ),
             Text(
               '''
@@ -25,7 +25,7 @@ All data in the GW2 Companion app is retrieved from the official Guild Wars 2 Ap
 Some Achievements and Masteries are currently missing from the Api, causing the total points to be off from the in-game number.
 Once ArenaNet updates the Api to include the missing Achievements and Masteries, these should automatically appear in the app.
               ''',
-              style: Theme.of(context).textTheme.bodyText1,
+              style: Theme.of(context).textTheme.bodyLarge,
             ),
           ],
         )

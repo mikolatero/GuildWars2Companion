@@ -38,7 +38,7 @@ class DungeonProgressCard extends StatelessWidget {
                 padding: EdgeInsets.all(4.0),
                 child: Text(
                   p.name,
-                  style: Theme.of(context).textTheme.bodyText1,
+                  style: Theme.of(context).textTheme.bodyLarge,
                   textAlign: TextAlign.left,
                   overflow: TextOverflow.ellipsis,
                 ),

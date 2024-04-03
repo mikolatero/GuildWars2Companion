@@ -54,7 +54,7 @@ class _MetaEventsPageState extends State<MetaEventsPage> {
 
             if (state is LoadedMetaEventsState) {
               return RefreshIndicator(
-                backgroundColor: Theme.of(context).accentColor,
+                backgroundColor: Theme.of(context).colorScheme.secondary,
                 color: Theme.of(context).cardColor,
                 onRefresh: () async {
                   BlocProvider.of<MetaEventBloc>(context).add(LoadMetaEventsEvent());

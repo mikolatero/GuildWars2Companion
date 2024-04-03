@@ -53,7 +53,7 @@ class MasteryLevelPage extends StatelessWidget {
                       padding: EdgeInsets.only(top: 4.0),
                       child: Text(
                         'Completed',
-                        style: Theme.of(context).textTheme.bodyText1.copyWith(
+                        style: Theme.of(context).textTheme.bodyLarge.copyWith(
                           color: Colors.white
                         )
                       ),
@@ -62,7 +62,7 @@ class MasteryLevelPage extends StatelessWidget {
                     padding: EdgeInsets.only(top: 4.0),
                     child: Text(
                       level.name,
-                      style: Theme.of(context).textTheme.headline1,
+                      style: Theme.of(context).textTheme.displayLarge,
                       textAlign: TextAlign.center,
                     ),
                   ),
@@ -70,7 +70,7 @@ class MasteryLevelPage extends StatelessWidget {
                     padding: EdgeInsets.only(top: 4.0),
                     child: Text(
                       mastery.name,
-                      style: Theme.of(context).textTheme.bodyText1.copyWith(
+                      style: Theme.of(context).textTheme.bodyLarge.copyWith(
                         color: Colors.white
                       ),
                       textAlign: TextAlign.center,

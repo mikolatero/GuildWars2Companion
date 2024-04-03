@@ -37,7 +37,7 @@ class RaidsPage extends StatelessWidget {
 
             if (state is LoadedRaidsState) {
               return RefreshIndicator(
-                backgroundColor: Theme.of(context).accentColor,
+                backgroundColor: Theme.of(context).colorScheme.secondary,
                 color: Theme.of(context).cardColor,
                 onRefresh: () async {
                   BlocProvider.of<RaidBloc>(context).add(LoadRaidsEvent(state.includeProgress));
@@ -101,7 +101,7 @@ class _RaidRow extends StatelessWidget {
                   padding: EdgeInsets.only(left: 4.0),
                   child: Text(
                     c.name,
-                    style: Theme.of(context).textTheme.bodyText1.copyWith(
+                    style: Theme.of(context).textTheme.bodyLarge.copyWith(
                       color: Colors.white
                     ),
                     maxLines: 1,

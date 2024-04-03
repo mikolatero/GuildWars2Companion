@@ -34,7 +34,7 @@ class EventTimesCard extends StatelessWidget {
                 backgroundColor: Theme.of(context).brightness == Brightness.light ? timeColor : Colors.white12,
                 label: Text(
                   timeFormat.format(t),
-                  style: Theme.of(context).textTheme.bodyText1.copyWith(
+                  style: Theme.of(context).textTheme.bodyLarge.copyWith(
                     color: Colors.white
                   ),
                 ),

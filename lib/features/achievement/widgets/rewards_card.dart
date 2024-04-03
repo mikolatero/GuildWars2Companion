@@ -20,7 +20,7 @@ class AchievementRewardsCard extends StatelessWidget {
             padding: EdgeInsets.only(bottom: 8.0),
             child: Text(
               'Rewards',
-              style: Theme.of(context).textTheme.headline2,
+              style: Theme.of(context).textTheme.displayMedium,
             ),
           ),
           Column(
@@ -50,7 +50,7 @@ class AchievementRewardsCard extends StatelessWidget {
                           padding: EdgeInsets.all(4.0),
                           child: Text(
                             r.item.name,
-                            style: Theme.of(context).textTheme.bodyText1,
+                            style: Theme.of(context).textTheme.bodyLarge,
                             textAlign: TextAlign.center,
                           ),
                         )
@@ -72,7 +72,7 @@ class AchievementRewardsCard extends StatelessWidget {
                           padding: EdgeInsets.all(4.0),
                           child: Text(
                             GuildWarsUtil.masteryName(r.region) + ' Mastery point',
-                            style: Theme.of(context).textTheme.bodyText1,
+                            style: Theme.of(context).textTheme.bodyLarge,
                             textAlign: TextAlign.center,
                           ),
                         )
@@ -93,7 +93,7 @@ class AchievementRewardsCard extends StatelessWidget {
                           padding: EdgeInsets.all(4.0),
                           child: Text(
                             r.title.name,
-                            style: Theme.of(context).textTheme.bodyText1,
+                            style: Theme.of(context).textTheme.bodyLarge,
                             textAlign: TextAlign.center,
                           ),
                         )

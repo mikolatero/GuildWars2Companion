@@ -36,7 +36,7 @@ class DungeonsPage extends StatelessWidget {
 
             if (state is LoadedDungeonsState) {
               return RefreshIndicator(
-                backgroundColor: Theme.of(context).accentColor,
+                backgroundColor: Theme.of(context).colorScheme.secondary,
                 color: Theme.of(context).cardColor,
                 onRefresh: () async {
                   BlocProvider.of<DungeonBloc>(context).add(LoadDungeonsEvent(state.includeProgress));
@@ -100,7 +100,7 @@ class _DungeonRow extends StatelessWidget {
                   padding: EdgeInsets.only(left: 4.0),
                   child: Text(
                     p.name,
-                    style: Theme.of(context).textTheme.bodyText1.copyWith(
+                    style: Theme.of(context).textTheme.bodyLarge.copyWith(
                       color: Colors.white
                     ),
                     maxLines: 1,

@@ -28,7 +28,7 @@ class TimeConfigurationPage extends StatelessWidget {
                   value: notation.notation24Hour,
                   title: Text(
                     notation.name,
-                    style: Theme.of(context).textTheme.bodyText1,
+                    style: Theme.of(context).textTheme.bodyLarge,
                   ),
                   onChanged: (bool notation) => BlocProvider.of<ConfigurationBloc>(context).add(ChangeTimeNotationEvent(notation24Hours: notation)),
                 ))

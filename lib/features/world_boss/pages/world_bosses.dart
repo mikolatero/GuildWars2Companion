@@ -59,7 +59,7 @@ class _WorldBossesPageState extends State<WorldBossesPage> {
 
                 if (state is LoadedWorldbossesState) {
                   return RefreshIndicator(
-                    backgroundColor: Theme.of(context).accentColor,
+                    backgroundColor: Theme.of(context).colorScheme.secondary,
                     color: Theme.of(context).cardColor,
                     onRefresh: () async {
                       BlocProvider.of<WorldBossBloc>(context).add(LoadWorldbossesEvent(true, null));
@@ -159,7 +159,7 @@ class _Row extends StatelessWidget {
                 if (isActive) {
                   return Text(
                     'Active',
-                    style: Theme.of(context).textTheme.headline2.copyWith(
+                    style: Theme.of(context).textTheme.displayMedium.copyWith(
                       color: Colors.white
                     ),
                   );
@@ -167,7 +167,7 @@ class _Row extends StatelessWidget {
                   
                 return Text(
                   GuildWarsUtil.durationToString(time.difference(DateTime.now())),
-                  style: Theme.of(context).textTheme.headline2.copyWith(
+                  style: Theme.of(context).textTheme.displayMedium.copyWith(
                     color: Colors.white
                   ),
                 );
@@ -175,7 +175,7 @@ class _Row extends StatelessWidget {
             ),
             Text(
               timeFormat.format(time),
-              style: Theme.of(context).textTheme.bodyText1.copyWith(
+              style: Theme.of(context).textTheme.bodyLarge.copyWith(
                 color: Colors.white
               ),
             )
